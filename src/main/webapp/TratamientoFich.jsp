@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>TRATAMIENTO FICHEROS</h1>
-<form action="FicheroServlet" method="post">
+<form action="ServletFich" method="post">
 <table>
 <tr>
 <td>
@@ -41,7 +41,7 @@
 <p><label for="dato5">DATO5:</label> <textarea name="dato5" id="dato5" rows="3" cols="30"></textarea></p>
 <p><label for="dato6">DATO6:</label> <input type="text" name="dato6" id="dato6"></p>
 <%
-String mensaje = (String) request.getAttribute("mensaje");
+String mensaje = (String) request.getAttribute("mensajeError");
 if (mensaje != null) { %>
 <p style="color: red;"><strong><%=mensaje %></strong></p>
 <% } %>
